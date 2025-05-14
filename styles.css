@@ -440,21 +440,4 @@ body {
     gap: 30px;
   }
 
-  @media (min-width: 1024px) {
-    .file-grid {
-      justify-content: flex-start;
-      gap: 30px;
-    }
-  
-    .file {
-      width: 200px;
-    }
-  
-    .file img {
-      width: 180px;
-      height: 220px;
-    }
-  }
-  }
-  
   
