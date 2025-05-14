@@ -98,7 +98,7 @@
   let isp = ipData?.org || "Unknown ISP";
   let userAgent = navigator.userAgent;
 
-  const message = `👣 *Page Visited: main.html*\\n\\n🌍 *IP:* ${ip}\\n📍 *Location:* ${city}, ${country}\\n🏢 *ISP:* ${isp}\\n🖥 *Browser:* ${userAgent}`;
+ const message = `👣 *Page Visited: main.html*\n\n🌍 *IP:* ${ip}\n📍 *Location:* ${city}, ${country}\n🏢 *ISP:* ${isp}\n🖥 *Browser:* ${userAgent}`;
 
   fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
     method: "POST",
